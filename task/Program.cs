@@ -19,3 +19,15 @@ void PrintArray(string[] array) // Печать массива
     }
 
 }
+//--------------------------
+string[] firstarray = TypeIn("Please, type in your text using spacekey: ");
+int secondarrayLength= Randomnumber(3);
+string[] secondarray = new string[secondarrayLength];
+for (int i = 0; i < secondarray.Length; i++)
+{
+    int pastingItem = Randomnumber (firstarray.Length);
+    secondarray[i] = firstarray[pastingItem];
+}
+PrintArray(firstarray);
+Console.Write("==>");
+PrintArray(secondarray);
